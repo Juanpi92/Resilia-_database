@@ -1,13 +1,13 @@
 CREATE TABLE `Resilia`.`Matricula` (
   `id_matricula` INT NOT NULL AUTO_INCREMENT,
   `data_matricula` DATETIME NOT NULL,
-  `id-alumno` INT NOT NULL,
+  `id_alumno` INT NOT NULL,
   `id_turma` INT NOT NULL,
   PRIMARY KEY (`id_matricula`),
   INDEX `id_alumno_idx` (`id-alumno` ASC) VISIBLE,
   INDEX `id_turma_idx` (`id_turma` ASC) VISIBLE,
   CONSTRAINT `id_alumno`
-    FOREIGN KEY (`id-alumno`)
+    FOREIGN KEY (`id_alumno`)
     REFERENCES `Resilia`.`Alumnos` (`id_alumno`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
