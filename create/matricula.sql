@@ -8,7 +8,7 @@ CREATE TABLE `Resilia`.`Matricula` (
   INDEX `id_turma_idx` (`id_turma` ASC) VISIBLE,
   CONSTRAINT `id_alumno`
     FOREIGN KEY (`id-alumno`)
-    REFERENCES `Resilia`.`Alumnos` (`id_alumnos`)
+    REFERENCES `Resilia`.`Alumnos` (`id_alumno`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `id_turma`
